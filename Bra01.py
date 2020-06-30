@@ -2,12 +2,17 @@
 # e outro que vai ser o tipo de adjetivo, bom ou mau. Os adjetivos fica a sua escolha,
 # e tem que ser escolhido randomicamente
 
+import random
+bom = ['Lindo', 'fofo', 'maravilhoso']
+mal = ['Feio', 'bobao', 'trouxao']
 nome = str(input('Digite seu nome : '))
 pergunta = str(input('Você se considera uma pessoa boa ou ma? '))
 if pergunta == 'boa':
-    print ('Parabens {}, seu lindo(a), continue assim.'.format(nome))
+    print (f' \n Parabens {nome} ', end='')
+    print (random.choice(bom))
 else:
-    print ('Você é feio(a) {} e precisa melhorar.'.format(nome))
+    print (f'\n Você {nome} é ', end='')
+    print (random.choice(mal))
 
 
 
