@@ -3,8 +3,8 @@
 # e tem que ser escolhido randomicamente
 
 import random
-bom = ['Lindo', 'fofo', 'maravilhoso']
-mal = ['Feio', 'bobao', 'trouxao']
+bom = ['lindo', 'fofo', 'maravilhoso']
+mal = ['feio', 'bobao', 'trouxao']
 nome = str(input('Digite seu nome : '))
 pergunta = str(input('Você se considera uma pessoa boa ou ma? '))
 if pergunta == 'boa':
